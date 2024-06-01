@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MRT Paths</title>
+    <meta name="viewport" content="initial-scale=1, width=device-width, minimum-scale=1">
+    <link rel="stylesheet" href="https://scwco.replit.app/style.css">
+    <style>
+      html {text-align: center}
+    </style>
+    <script>
+      async function Send() {
+        var fd = new FormData()
+        fd.append("start", document.getElementById("start").value)
+        fd.append("end", document.getElementById("end").value)
+        var response = await fetch("/", {
+          method: "POST",
+          mode: "same-origin",
+          referrerPolicy: "same-origin",
+          body: fd
+        })
+        response.json().then((data) => {
+          document.getElementById("route").innerText = data[0]
+          document.getElementById("interchange").innerText = data[1]
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      Start at: <select id="start">
+        {% for station in station_list %}
+        <option value="{{station}}">{{station}}</option>
+        {% endfor %}
+      </select><br>
+      End at: <select id="end">
+        {% for station in station_list %}
+        <option value="{{station}}">{{station}}</option>
+        {% endfor %}
+      </select><br>
+      <button class="tabbtn" onclick="Send()">Find shortest path</button>
+    </div>
+    <div id="route"></div>
+    <div id="interchange"></div>
+    <div id="disclaimer">Note: This program does not account for wait times or delays. Please factor in additional time when travelling.</div>
+  </body>
+</html>

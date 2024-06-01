@@ -6,7 +6,6 @@ from tkinter.ttk import *
 import dijix as a
 import sqlite3
 
-# import sv_ttk
 db = sqlite3.connect("MRT.db")
 fetch = db.execute("SELECT station_start, station_end, between_stations FROM 'StartEnd'")
 station_start = []
@@ -59,30 +58,38 @@ def main():
         end = db.execute("SELECT line from 'Stations' WHERE name = ?", (combo_output.get(),)).fetchone()[0] + " " + combo_output.get()
         print(f"start: {start}")
         print(f"end: {end}")
-        previous_nodes, shortest_path = a.dijkstra_algorithm(graph=graph, start_node=start)
-        output = a.print_result(previous_nodes, shortest_path, start_node=start, target_node=end)
+        if start == end:
+            route.config(text = f"Shortest path shown, with time taken being 0 minutes and 0 seconds because they are the same station and you are a clown for trying this.\n{start[4:]} -> {start[4:]}")
+            interchanges.config(text = f"Change lines from Stupidity to Unstupidity at {start[4:]}")
 
-        path = output[0]
-        travel = output[1]
-        the_interchanges = output[2]
-        print(type(the_interchanges))
-        if path[0][4:] == path[1][4:]:
-            travel -= int(db.execute("SELECT between_stations FROM 'StartEnd' WHERE station_start = ? AND station_end = ? OR station_start = ? AND station_end = ?", (path[0], path[1], path[1], path[0])).fetchone()[0])
-            del path[0]
-            del the_interchanges[0]
-        
-        if path[-2][4:] == path[-1][4:]:
-            travel -= int(db.execute("SELECT between_stations FROM 'StartEnd' WHERE station_start = ? AND station_end = ? OR station_start = ? AND station_end = ?", (path[-2], path[-1], path[-1], path[-2])).fetchone()[0])
-            del path[-1]
-            del the_interchanges[-1]
+        else:
+            previous_nodes, shortest_path = a.dijkstra_algorithm(graph=graph, start_node=start)
+            output = a.print_result(previous_nodes, shortest_path, start_node=start, target_node=end)
+            path = output[0]
+            travel = output[1]
+            the_interchanges = output[2]
+            if path[0][4:] == path[1][4:]:
+                travel -= int(db.execute("SELECT between_stations FROM 'StartEnd' WHERE station_start = ? AND station_end = ? OR station_start = ? AND station_end = ?", (path[0], path[1], path[1], path[0])).fetchone()[0])
+                del path[0]
+                del the_interchanges[0]
 
-        for t in range(len(path) - 1):
-            if path[t][4:] != path[t+1][4:]:
-                travel += int(db.execute("SELECT wait_time FROM 'StartEnd' WHERE station_start = ? AND station_end = ? OR station_start = ? AND station_end = ?", (path[t], path[t+1], path[t+1], path[t])).fetchone()[0])
+            if path[-2][4:] == path[-1][4:]:
+                travel -= int(db.execute("SELECT between_stations FROM 'StartEnd' WHERE station_start = ? AND station_end = ? OR station_start = ? AND station_end = ?", (path[-2], path[-1], path[-1], path[-2])).fetchone()[0])
+                del path[-1]
+                del the_interchanges[-1]
 
-        route.config(text=f"Shortest path shown, with cost of {travel // 60} minutes and {travel % 60} seconds. " + str(" -> ".join(path)))
-        interchanges.config(text="\n".join(the_interchanges))
-
+            for t in range(len(path) - 1):
+                if path[t][4:] != path[t+1][4:]:
+                    travel += int(db.execute("SELECT wait_time FROM 'StartEnd' WHERE station_start = ? AND station_end = ? OR station_start = ? AND station_end = ?", (path[t], path[t+1], path[t+1], path[t])).fetchone()[0])
+            shortened_path = [path[0]]
+            for t in range(1, len(path) - 1):
+                if path[t][:3] != path[t-1][:3] or path[t][:3] != path[t+1][:3]:
+                    shortened_path.append(path[t])
+            shortened_path.append(path[-1])
+            route.config(text=f"Shortest path shown, with time taken being {travel // 60} minutes and {travel % 60} seconds.\n" + " -> ".join(shortened_path))
+            interchanges.config(text="\n".join(the_interchanges))
+            print(f"Shortest path shown, with time taken being {travel // 60} minutes and {travel % 60} seconds.\n" + str(" -> ".join(shortened_path)))
+            print("\n".join(the_interchanges))
 
     button1 = Button(
         text="Click here",
@@ -98,7 +105,7 @@ def main():
 
     route = Label(window, text="", wraplength=300)
     route.pack()
-    
+
 
     interchanges = Label(window, text="", wraplength=300)
     interchanges.pack()
@@ -107,8 +114,6 @@ def main():
 
     disclaimer = Label(window, text =disclaimer, wraplength=300)
     disclaimer.pack()
-
-    # sv_ttk.set_theme("light")
 
     window.title("Python test")
     window.geometry("400x500")

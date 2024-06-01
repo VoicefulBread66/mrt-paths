@@ -124,9 +124,6 @@ def print_result(previous_nodes, shortest_path, start_node, target_node):
     spath_min = math.floor(shortest_path[target_node] / 60)
     spath_sec = shortest_path[target_node] % 60
 
-    print(f"Shortest path shown, with cost of {spath_min} minutes and {spath_sec} seconds.")
-    print(" -> ".join(reversed(path)))
-
     route = f"Shortest path shown, with cost of {spath_min} minutes and {spath_sec} seconds. " + str(" -> ".join(reversed(path)))
 
     path = list(reversed(path))
@@ -137,7 +134,6 @@ def print_result(previous_nodes, shortest_path, start_node, target_node):
         checkone = str(path[i])[:3]
         checktwo = str(path[i+1])[:3]
         if (checkone != checktwo):
-            print(f"Change lines from {checkone} to {checktwo} at {path[i][4:]} ")
             interchanges.append(f"Change lines from {checkone} to {checktwo} at {path[i][4:]}")
 
     return [path, shortest_path[target_node], interchanges]
