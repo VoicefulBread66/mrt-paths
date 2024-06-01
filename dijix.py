@@ -140,4 +140,4 @@ def print_result(previous_nodes, shortest_path, start_node, target_node):
             print(f"Change lines from {checkone} to {checktwo} at {path[i][4:]} ")
             interchanges.append(f"Change lines from {checkone} to {checktwo} at {path[i][4:]}")
 
-    return route, interchanges
+    return [path, shortest_path[target_node], interchanges]

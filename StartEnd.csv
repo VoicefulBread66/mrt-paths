@@ -1,0 +1,192 @@
+station_start,station_end,between_stations,wait_time
+EWL Pasir Ris,EWL Tampines,174,0
+EWL Tampines,EWL Simei,152,0
+EWL Simei,EWL Tanah Merah,196,0
+EWL Tanah Merah,EWL Bedok,178,0
+EWL Bedok,EWL Kembangan,198,0
+EWL Kembangan,EWL Eunos,137,0
+EWL Eunos,EWL Paya Lebar,137,0
+EWL Paya Lebar,EWL Aljunied,150,0
+EWL Aljunied,EWL Kallang,151,0
+EWL Kallang,EWL Lavender,141,0
+EWL Lavender,EWL Bugis,120,0
+EWL Bugis,EWL City Hall,127,0
+EWL City Hall,EWL Raffles Place,131,0
+EWL Raffles Place,EWL Tanjong Pagar,100,0
+EWL Tanjong Pagar,EWL Outram Park,138,0
+EWL Outram Park,EWL Tiong Bahru,175,0
+EWL Tiong Bahru,EWL Redhill,158,0
+EWL Redhill,EWL Queenstown,150,0
+EWL Queenstown,EWL Commonwealth,144,0
+EWL Commonwealth,EWL Buona Vista,135,0
+EWL Buona Vista,EWL Dover,167,0
+EWL Dover,EWL Clementi,164,0
+EWL Clementi,EWL Jurong East,294,0
+EWL Jurong East,EWL Chinese Garden,161,0
+EWL Chinese Garden,EWL Lakeside,154,0
+EWL Lakeside,EWL Boon Lay,189,0
+EWL Boon Lay,EWL Pioneer,136,0
+EWL Pioneer,EWL Joo Koon,205,0
+EWL Joo Koon,EWL Gul Circle,200,0
+EWL Gul Circle,EWL Tuas Crescent,160,0
+EWL Tuas Crescent,EWL Tuas West Road,150,0
+EWL Tuas West Road,EWL Tuas Link,145,0
+CGL Tanah Merah,CGL Expo,188,0
+CGL Expo,CGL Changi Airport,316,0
+NSL Jurong East,NSL Bukit Batok,299,0
+NSL Bukit Batok,NSL Bukit Gombak,145,0
+NSL Bukit Gombak,NSL Choa Chu Kang,267,0
+NSL Choa Chu Kang,NSL Yew Tee,155,0
+NSL Yew Tee,NSL Kranji,283,0
+NSL Kranji,NSL Marsiling,167,0
+NSL Marsiling,NSL Woodlands,165,0
+NSL Woodlands,NSL Admiralty,110,0
+NSL Admiralty,NSL Sembawang,195,0
+NSL Sembawang,NSL Canberra,158,0
+NSL Canberra,NSL Yishun,153,0
+NSL Yishun,NSL Khatib,174,0
+NSL Khatib,NSL Yio Chu Kang,308,0
+NSL Yio Chu Kang,NSL Ang Mo Kio,154,0
+NSL Ang Mo Kio,NSL Bishan,217,0
+NSL Bishan,NSL Braddell,135,0
+NSL Braddell,NSL Toa Payoh,121,0
+NSL Toa Payoh,NSL Novena,147,0
+NSL Novena,NSL Newton,149,0
+NSL Newton,NSL Orchard,146,0
+NSL Orchard,NSL Somerset,137,0
+NSL Somerset,NSL Dhoby Ghaut,118,0
+NSL Dhoby Ghaut,NSL City Hall,86,0
+NSL City Hall,NSL Raffles Place,131,0
+NSL Raffles Place,NSL Marina Bay,91,0
+NSL Marina Bay,NSL Marina South Pier,134,0
+NEL Harbourfront,NEL Outram Park,183,0
+NEL Outram Park,NEL Chinatown,120,0
+NEL Chinatown,NEL Clarke Quay,112,0
+NEL Clarke Quay,NEL Dhoby Ghaut,136,0
+NEL Dhoby Ghaut,NEL Little India,136,0
+NEL Little India,NEL Farrer Park,112,0
+NEL Farrer Park,NEL Boon Keng,125,0
+NEL Boon Keng,NEL Potong Pasir,150,0
+NEL Potong Pasir,NEL Woodleigh,118,0
+NEL Woodleigh,NEL Serangoon,128,0
+NEL Serangoon,NEL Kovan,175,0
+NEL Kovan,NEL Hougang,151,0
+NEL Hougang,NEL Buangkok,140,0
+NEL Buangkok,NEL Sengkang,119,0
+NEL Sengkang,NEL Punggol,174,0
+CCL Dhoby Ghaut,CCL Bras Basah,88,0
+CCL Bras Basah,CCL Esplanade,101,0
+CCL Esplanade,CCL Promenade,136,0
+CCL Promenade,CCL Nicoll Highway,145,0
+CCL Nicoll Highway,CCL Stadium,132,0
+CCL Stadium,CCL Mountbatten,109,0
+CCL Mountbatten,CCL Dakota,99,0
+CCL Dakota,CCL Paya Lebar,134,0
+CCL Paya Lebar,CCL Macpherson,153,0
+CCL Macpherson,CCL Tai Seng,138,0
+CCL Tai Seng,CCL Bartley,130,0
+CCL Bartley,CCL Serangoon,155,0
+CCL Serangoon,CCL Lorong Chuan,148,0
+CCL Lorong Chuan,CCL Bishan,154,0
+CCL Bishan,CCL Marymount,178,0
+CCL Marymount,CCL Caldecott,131,0
+CCL Caldecott,CCL Botanic Gardens,270,0
+CCL Botanic Gardens,CCL Farrer Road,152,0
+CCL Farrer Road,CCL Holland Village,147,0
+CCL Holland Village,CCL Buona Vista,117,0
+CCL Buona Vista,CCL one-north,144,0
+CCL one-north,CCL Kent Ridge,117,0
+CCL Kent Ridge,CCL Haw Par Villa,159,0
+CCL Haw Par Villa,CCL Pasir Panjang,141,0
+CCL Pasir Panjang,CCL Labrador Park,158,0
+CCL Labrador Park,CCL Telok Blangah,128,0
+CCL Telok Blangah,CCL Harbourfront,173,0
+CCL Promenade,CCL Bayfront,136,0
+CCL Bayfront,CCL Marina Bay,94,0
+DTL Bukit Panjang,DTL Cashew,90,0
+DTL Cashew,DTL Hillview,120,0
+DTL Hillview,DTL Beauty World,207,0
+DTL Beauty World,DTL King Albert Park,113,0
+DTL King Albert Park,DTL Sixth Avenue,130,0
+DTL Sixth Avenue,DTL Tan Kah Kee,120,0
+DTL Tan Kah Kee,DTL Botanic Gardens,105,0
+DTL Botanic Gardens,DTL Stevens,133,0
+DTL Stevens,DTL Newton,132,0
+DTL Newton,DTL Little India,148,0
+DTL Little India,DTL Rochor,97,0
+DTL Rochor,DTL Bugis,94,0
+DTL Bugis,DTL Promenade,119,0
+DTL Promenade,DTL Bayfront,136,0
+DTL Bayfront,DTL Downtown,118,0
+DTL Downtown,DTL Telok Ayer,93,0
+DTL Telok Ayer,DTL Chinatown,87,0
+DTL Chinatown,DTL Fort Canning,130,0
+DTL Fort Canning,DTL Bencoolen,102,0
+DTL Bencoolen,DTL Jalan Besar,99,0
+DTL Jalan Besar,DTL Bendemeer,113,0
+DTL Bendemeer,DTL Geylang Bahru,122,0
+DTL Geylang Bahru,DTL Mattar,146,0
+DTL Mattar,DTL Macpherson,101,0
+DTL Macpherson,DTL Ubi,123,0
+DTL Ubi,DTL Kaki Bukit,117,0
+DTL Kaki Bukit,DTL Bedok North,107,0
+DTL Bedok North,DTL Bedok Reservoir,136,0
+DTL Bedok Reservoir,DTL Tampines West,144,0
+DTL Tampines West,DTL Tampines,123,0
+DTL Tampines,DTL Tampines East,140,0
+DTL Tampines East,DTL Upper Changi,188,0
+DTL Upper Changi,DTL Expo,107,0
+TEL Woodlands North,TEL Woodlands,92,0
+TEL Woodlands,TEL Woodlands South,113,0
+TEL Woodlands South,TEL Springleaf,266,0
+TEL Springleaf,TEL Lentor,168,0
+TEL Lentor,TEL Mayflower,124,0
+TEL Mayflower,TEL Bright Hill,93,0
+TEL Bright Hill,TEL Upper Thomson,114,0
+TEL Upper Thomson,TEL Caldecott,151,0
+TEL Caldecott,TEL Stevens,179,0
+TEL Stevens,TEL Napier,136,0
+TEL Napier,TEL Orchard Boulevard,85,0
+TEL Orchard Boulevard,TEL Orchard,90,0
+TEL Orchard,TEL Great World,99,0
+TEL Great World,TEL Havelock,72,0
+TEL Havelock,TEL Outram Park,90,0
+TEL Outram Park,TEL Maxwell,66,0
+TEL Maxwell,TEL Shenton Way,80,0
+TEL Shenton Way,TEL Marina Bay,69,0
+TEL Marina Bay,TEL Gardens by the Bay,145,0
+BPL Choa Chu Kang,BPL Bukit Panjang,393,0
+NSL Jurong East,EWL Jurong East,10,0
+BPL Choa Chu Kang,NSL Choa Chu Kang,105,0
+TEL Woodlands,NSL Woodlands,245,0
+CCL Bishan,NSL Bishan,150,0
+NSL Newton,DTL Newton,210,0
+TEL Orchard,NSL Orchard,190,0
+NSL Dhoby Ghaut,NEL Dhoby Ghaut,195,0
+NSL Dhoby Ghaut,CCL Dhoby Ghaut,105,0
+NEL Dhoby Ghaut,CCL Dhoby Ghaut,115,0
+NSL City Hall,EWL City Hall,30,0
+NSL Raffles Place,EWL Raffles Place,30,0
+NSL Marina Bay,CCL Marina Bay,195,0
+NSL Marina Bay,TEL Marina Bay,310,0
+CCL Marina Bay,TEL Marina Bay,220,0
+EWL Tampines,DTL Tampines,370,0
+EWL Paya Lebar,CCL Paya Lebar,160,0
+EWL Bugis,DTL Bugis,235,0
+EWL Outram Park,NEL Outram Park,160,0
+EWL Outram Park,TEL Outram Park,115,0
+NEL Outram Park,TEL Outram Park,210,0
+EWL Buona Vista,CCL Buona Vista,180,0
+CGL Expo,DTL Expo,175,0
+EWL Tanah Merah,CGL Tanah Merah,10,0
+NEL Harbourfront,CCL Harbourfront,115,0
+NEL Chinatown,DTL Chinatown,75,0
+NEL Little India,DTL Little India,185,0
+NEL Serangoon,CCL Serangoon,175,0
+DTL Promenade,CCL Promenade,90,0
+CCL Macpherson,DTL Macpherson,60,0
+CCL Caldecott,TEL Caldecott,200,0
+CCL Botanic Gardens,DTL Botanic Gardens,190,0
+CCL Bayfront,DTL Bayfront,30,0
+BPL Bukit Panjang,DTL Bukit Panjang,270,0
+DTL Stevens,TEL Stevens,100,0
