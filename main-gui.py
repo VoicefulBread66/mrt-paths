@@ -110,7 +110,7 @@ def main():
     interchanges = Label(window, text="", wraplength=300)
     interchanges.pack()
 
-    disclaimer = "this program doesn't account for wait times or delays. Please factor in additional time when travelling."
+    disclaimer = "This program doesn't account for wait times or delays. Please factor in additional time when travelling."
 
     disclaimer = Label(window, text =disclaimer, wraplength=300)
     disclaimer.pack()
